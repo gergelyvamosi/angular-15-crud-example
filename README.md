@@ -7,4 +7,4 @@ Demo Application in that:
 - We can create, retrieve, update, delete Demos.
 - There is a Search bar for finding Demos by title. Search runs automatically after typing first 3 chars.
 
-Run `ng serve --host 0.0.0.0 --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --host 0.0.0.0 --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files (regenerating and reloading main.js and runtime.js).
