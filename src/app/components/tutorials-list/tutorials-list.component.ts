@@ -13,6 +13,7 @@ export class TutorialsListComponent implements OnInit {
   currentTutorial: Tutorial = {};
   currentIndex = -1;
   title = '';
+  lastSearch = '';
 
   constructor(private tutorialService: TutorialService) { }
 
@@ -70,7 +71,8 @@ export class TutorialsListComponent implements OnInit {
   }
 
   handleKeyup(): void {
-    if (this.title.length > 3) {
+    if ((this.title.length > 3) || (this.lastSearch.length > 3)) {
+      this.lastSearch = this.title;
       this.searchTitle();
     }
   }
